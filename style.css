@@ -1,0 +1,210 @@
+/* ==============================================================
+GOOGLE FONTS IMPORT
+============================================================== */
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:200,700,regular|Space+Grotesk:700,regular|Space+Mono:700,700italic,regular,italic');
+
+/* ==============================================================
+SHARED BASE STYLES
+============================================================== */
+/* Smooth scrolling  */
+html {
+  scroll-behavior: smooth;
+}
+
+/* General page styling */
+body {
+  font-family: 'Space Mono', monospace;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /*scroll-behavior: smooth;*/
+}
+
+/* Light-mode palette */
+body {
+  background-color: #f1eaf7;
+  color: #5d2847;
+}
+
+.bg-gray-50 {
+  background-color: #f9f0f4;
+}
+
+.text-gray-800,
+h1,
+h2,
+h3,
+p {
+  color: #5d2847;
+}
+
+.text-gray-600 {
+  color: #944e76;
+}
+
+.border-gray-300 {
+  border-color: #b37e96;
+}
+
+.bg-button-1,
+.bg-button-2,
+.bg-button-3,
+.bg-button-4,
+.bg-button-5 {
+  background-color: #d9cafe;
+  color: #000033;
+}
+
+.bg-button-1:hover,
+.bg-button-2:hover,
+.bg-button-3:hover,
+.bg-button-4:hover,
+.bg-button-5:hover {
+  background-color: #b18cfe !important;
+}
+
+/* Light mode hover text colors */
+.group:hover span,
+.group:hover .fas,
+.group:hover .fab {
+  color: #2d1235 !important;
+}
+
+a {
+  color: #000033;
+  border-bottom: 5px groove #874efe;
+}
+
+a:hover {
+  color: #000033;
+  border-bottom: 5px groove #b190f7b4;
+}
+
+/* Common interactive elements (both modes) */
+.btn-hover:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Dark-mode toggle button */
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #b18cfe;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.dark-mode-toggle:hover {
+  background: #d9cafe;
+  transform: scale(1.1);
+}
+
+.dark-mode-toggle i {
+  transition: transform 0.3s ease;
+}
+
+.dark-mode-toggle:hover i {
+  transform: rotate(15deg);
+}
+
+/* ==============================================================
+DARK-MODE OVERRIDES
+============================================================== */
+body.dark-mode {
+  background-color: #5d2f62;
+  color: #e6c8ff;
+}
+
+/* Dark mode palette swaps */
+body.dark-mode .bg-gray-50 {
+  background-color: #3f1e42 !important;
+}
+
+body.dark-mode .text-gray-800,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p {
+  color: #e6c8ff;
+}
+
+body.dark-mode .text-gray-600 {
+  color: #d1a8ff !important;
+}
+
+body.dark-mode .border-gray-300 {
+  border-color: #8c5885 !important;
+}
+
+/* Dark mode buttons  */
+body.dark-mode .bg-button-1,
+body.dark-mode .bg-button-2,
+body.dark-mode .bg-button-3,
+body.dark-mode .bg-button-4,
+body.dark-mode .bg-button-5 {
+  background-color: #dcb3e4;
+  color: #2d1235 !important;
+}
+
+/* Dark mode button hover effects */
+body.dark-mode .bg-button-1:hover,
+body.dark-mode .bg-button-2:hover,
+body.dark-mode .bg-button-3:hover,
+body.dark-mode .bg-button-4:hover,
+body.dark-mode .bg-button-5:hover {
+  background-color: #c895d0 !important;
+}
+
+/* Dark mode hover text colors  */
+body.dark-mode .group:hover span,
+body.dark-mode .group:hover .fas,
+body.dark-mode .group:hover .fab {
+  color: #1a0d1f !important;
+}
+
+/* Dark mode text and icon color */
+body.dark-mode .text-white,
+body.dark-mode .fa-external-link-alt,
+body.dark-mode .text-slate-900 {
+  color: #2d1235 !important;
+}
+
+/* Dark mode hover for external link icons */
+body.dark-mode .group:hover .fas.fa-external-link-alt {
+  color: #1a0d1f !important;
+}
+
+body.dark-mode a {
+  color: #c895d0;
+  border-bottom: 5px groove #894b91;
+}
+
+body.dark-mode a:hover {
+  color: #af72b9;
+  border-bottom: 5px groove #7b4383;
+}
+
+/* Dark mode toggle button styles */
+body.dark-mode .dark-mode-toggle {
+  background: #e6c8ff;
+  color: #5d2f62;
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+  background: #b08cbf;
+}
+
+/* Dark mode button hover shadow */
+body.dark-mode .btn-hover:hover {
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
